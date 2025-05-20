@@ -12,3 +12,4 @@ with open('data.text', 'a') as file:
     for i in temp:
         if i.find('img') is not None:
             file.write(i.find('figcaption').text+'\n')
+print("Successful run")
