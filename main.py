@@ -5,7 +5,7 @@ from datetime import datetime
 response  = requests.get("https://timesofindia.indiatimes.com/?from=mdr")
 soup = BeautifulSoup(response.text,'html.parser')
 temp = soup.select('.col_l_6')
-with open('data.text', 'a') as file:
+with open('data.txt', 'a') as file:
     now = datetime.now()
     now_str = now.strftime("%Y-%m-%d %H:%M:%S")
     file.write(now_str+'\n')
