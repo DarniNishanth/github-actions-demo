@@ -24,7 +24,7 @@ jobs:
         
     - name: Run Scraper
       run: |
-        python scraper.py
+        python main.py
     
     - name: Check for changes
       id: git-status
@@ -37,8 +37,8 @@ jobs:
       if: steps.git-status.outputs.changed == 'true'
       run: |
         echo start push
-        git config --global user.name "aneasystone"
-        git config --global user.email "aneasystone@gmail.com"
+        git config --global user.name "DarniNishanth"
+        git config --global user.email "dharninishanth@gmail.com"
         
         git add -A
         git commit -m $(date '+%Y-%m-%d')
