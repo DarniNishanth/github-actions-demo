@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout
+    - name: Checkout, this will make the repo code available for the next steps.
       uses: actions/checkout@v2
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
